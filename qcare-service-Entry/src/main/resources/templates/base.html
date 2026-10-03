@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      th:fragment="layout(title, content)">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PHALENA | QCARE</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" th:href="@{/images/favicon.png}">
+    <link rel="apple-touch-icon" th:href="@{/images/favicon.png}">
+
+    <!-- Base CSS -->
+    <link rel="stylesheet" th:href="@{/css/base.css}">
+    <link rel="stylesheet" th:href="@{/css/navbar.css}">
+    <link rel="stylesheet" th:href="@{/css/hero.css}">
+
+</head>
+
+<body>
+
+
+<header>
+    <!-- Header -->
+    <div th:replace="~{fragments/navbar :: navbar}"></div>
+</header>
+
+<main>
+
+    <div th:replace="~{fragments/hero :: hero}"></div>
+
+
+</main>
+
+<footer>
+    <!-- Footer -->
+</footer>
+
+<!-- Base JavaScript -->
+<script th:src="@{/js/base.js}" defer></script>
+
+
+</body>
+</html>

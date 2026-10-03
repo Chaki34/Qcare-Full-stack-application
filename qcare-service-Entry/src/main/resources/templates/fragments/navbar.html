@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<header th:fragment="navbar" class="site-header">
+    <nav class="navbar container">
+
+        <!-- PHALENA Brand -->
+        <a th:href="@{/}" class="brand" aria-label="PHALENA Home">
+            <img th:src="@{/images/phalena-logo.png}"
+                 alt="PHALENA"
+                 class="brand-logo">
+        </a>
+
+        <!-- Mobile Menu Button -->
+        <button class="menu-toggle"
+                type="button"
+                aria-label="Toggle navigation"
+                aria-controls="navLinks"
+                aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <!-- Navigation Links -->
+        <div class="nav-links" id="navLinks">
+            <a th:href="@{/#modules}">Modules</a>
+            <a th:href="@{/#ecosystem}">Ecosystem</a>
+            <a th:href="@{/about}">About</a>
+            <a th:href="@{/#team}">Team</a>
+            <a th:href="@{/#roadmap}">Roadmap</a>
+
+            <!-- Explore QCARE CTA -->
+            <a th:href="@{/modules}" class="nav-cta">
+                <span class="cta-text">Explore QCARE</span>
+                <span class="cta-arrow" aria-hidden="true">↗</span>
+            </a>
+        </div>
+
+    </nav>
+</header>
+
+</body>
+</html>
+

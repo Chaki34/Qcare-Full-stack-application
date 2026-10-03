@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+
+<section th:fragment="hero" class="qcare-hero" id="home">
+
+    <div class="hero-container">
+
+        <!-- LEFT: Hero Content -->
+        <div class="hero-content">
+
+            <span class="hero-eyebrow">
+                <span class="eyebrow-dot"></span>
+                QCARE HEALTHCARE PLATFORM
+            </span>
+
+            <h1 class="hero-title">
+                Where Healthcare<br>
+                Meets Management<span class="title-dot">.</span>
+            </h1>
+
+            <p class="hero-description">
+                QCARE is a next-generation healthcare platform by PHALENA,
+                designed to connect patients, doctors, hospitals, families
+                and emergency services — all in one intelligent ecosystem.
+            </p>
+
+            <div class="hero-actions">
+
+                <a th:href="@{/modules}" class="hero-btn hero-btn-primary">
+                    <span>Explore QCARE</span>
+                    <span class="hero-btn-arrow" aria-hidden="true">→</span>
+                </a>
+
+                <a th:href="@{/#ecosystem}" class="hero-btn hero-btn-secondary">
+                    Learn More
+                </a>
+
+            </div>
+
+            <div class="hero-trust">
+                <span class="trust-indicator"></span>
+                <span>One platform. Connected healthcare.</span>
+            </div>
+
+        </div>
+
+        <!-- RIGHT: PHALENA Healthcare Visual -->
+        <div class="hero-visual">
+
+            <div class="hero-orbit hero-orbit-one"></div>
+            <div class="hero-orbit hero-orbit-two"></div>
+
+            <div class="hero-image-wrap">
+                <img
+                        th:src="@{/images/phalena-hero.png}"
+                        alt="PHALENA healthcare branding with a stethoscope"
+                        class="hero-image"
+                        fetchpriority="high">
+            </div>
+
+            <div class="hero-image-caption">
+                <span class="caption-line"></span>
+                <span>Healthcare, intelligently connected.</span>
+                <span class="caption-line"></span>
+            </div>
+
+            <div class="hero-floating-tag">
+                <span class="floating-tag-icon">+</span>
+                <span>
+                    <strong>QCARE</strong>
+                    <small>Healthcare simplified</small>
+                </span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Bottom transition -->
+    <div class="hero-bottom-fade" aria-hidden="true"></div>
+
+</section>
+
+</body>
+</html>
